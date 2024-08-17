@@ -1,0 +1,65 @@
+#main-container {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 15px;
+    position: relative;
+}
+
+.main-fixed{
+    z-index: 1;
+}
+
+.item {
+    background-color: lightblue;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+
+.background-cover{ 
+    background: url(../img/background-cover.jpg); 
+    position: absolute;
+    top: 0;
+    left: 265px;
+    right: 0;
+    bottom: 15px;
+    opacity: 0.1;
+    border-radius: 0.5rem;
+    z-index: 1;
+ }
+
+ /*Diseño para tablets*/
+ /*@media (max-width: 1350px){
+    #main-container{
+        grid-template-columns: 200px 1fr;
+    }
+    .background-cover{
+        left: 215px;
+    }
+}*/
+
+/*diseño para dispositivos moviles*/
+
+ @media (max-width:900px) {
+    #main-container{
+        grid-template-columns: none;
+    }
+    .background-cover{
+        left: 0;
+        top: 64.8px;
+        right: 0;
+    }
+    
+}
+@media (max-width:425px){
+    .background-cover{
+        top: 200px;
+    }
+}
+
+
+
+ 
+
+
+

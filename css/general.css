@@ -1,0 +1,30 @@
+:root{
+    --black: #16151679;
+    --black2: #0000007a;
+    --black3: #000000b2;
+    --dark-blue: #1e2988;
+    --dark-red: rgba(255, 0, 0, 0.664);
+    --white: #fff;
+    --grey: #b39f9f80;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+
+#account-options a, .posters-links{
+    text-decoration: none;
+}
+  
+@font-face {
+    font-family: 'MiFuente';
+    src: url('../fonts/mifuente.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Avara';
+    src: url('../fonts/Avara.otf') format('opentype');
+}

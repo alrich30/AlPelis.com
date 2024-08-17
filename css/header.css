@@ -1,0 +1,152 @@
+
+/*Diseñando el contenedor <header>*/
+header{
+    background-color: var(--black);
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    margin-bottom: 15px;   
+}
+
+
+#logo_img{
+    height: 100px;
+}
+
+#account-options{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    height: 30px;
+}
+
+.cuenta-usuario{
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    gap: 10px;
+}
+.mb-3 input{
+    height: 30px;
+    width: 200px;
+    border-radius: 1rem;
+    border: none;
+}
+#buscar_1, .card-body{
+    font-family: 'Avara', sans-serif;
+    font-size: small;
+    padding: 10px;
+    width: 200px;
+}
+
+.col-12 {
+    position: relative;
+}
+
+#card-body{
+    position: absolute; 
+    border-radius: 0.5rem;
+    left: -50px;
+    top: 60px;
+    right: 0;
+    z-index: 3;
+    background-color: chocolate;
+    
+}
+.mb-3{
+    display: flex;
+    gap: 10px;
+}
+
+.header-fixed{
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    background-color: var(--black);
+}
+#datos_buscador{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 5px 0;
+    background: #2d3e3a;
+    border-radius: 0.5rem;
+
+}
+.buscador_link{
+    align-items: center;
+}
+
+.ListResult{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Avara', sans-serif;
+    font-size: small;
+    position: relative;
+}
+
+.ListResult::after{
+    content: "";
+    position: absolute;
+    border-color: transparent transparent chocolate transparent;
+    border-style: solid;
+    top: -10px;
+    right: 5%;
+    border-width: 5px;
+}
+.ListResult li{
+    padding: 20px 10px 20px 70px;
+    position: relative;
+}
+.ListResult li figure{
+
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    left: 3px;
+    top: 2px;
+
+}
+.ListResult li figure img{
+    height: 100%;
+    width: 100%;
+    border-radius: .5rem;
+}
+.ListResult li a{
+    cursor: pointer;
+}
+
+
+.buscador_link p{
+    margin-left: 20px;
+}
+
+
+
+@media (max-width: 1000px){
+    div a{
+        font-size: medium;
+    }
+    #account-options{
+        flex-direction: column;
+        align-items: start;
+        gap: 15px;
+    }
+}
+@media  (max-width: 425px){
+    #buscar_1{
+        width: 150px;
+    }
+}
+
+
+
+
+
+
+
+

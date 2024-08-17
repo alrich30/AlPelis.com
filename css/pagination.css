@@ -1,0 +1,71 @@
+
+/*Adaptar la paginacion a diferentes dispositivos*/
+
+
+/*Configuracion del contenedor*/
+.pagination{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--black3);
+    border-radius: 0.5rem;
+    padding: 15px 0;
+}
+
+.pagination div{
+    display: flex;
+    align-items: end;
+    gap: 5px;
+}
+
+.pagination div a{
+    line-height: 0.5; /* Elimina el espacio extra debajo del texto */
+}
+
+
+
+
+
+
+/*Diseño de los botones*/
+
+a.pagination-previous, a.pagination-next, a.pagination-link{
+    padding: 10px;
+    background-color: #ffffff86;
+    border-radius: 50%;
+    cursor: pointer;
+    color: var(--dark-red);
+    text-decoration: none;
+}
+
+p.pagination-link{
+    color: #ffffff86;
+    padding: 0 10px;
+    display: flex;
+    font-size: x-large;
+    text-decoration: none;
+}
+
+
+a.pagination-link.is-current{
+    background-color: #485fc7;
+    border: #485fc7;
+    color: red;
+}
+
+a.is-disabled{
+    background-color: #dbdbdb;
+    color: #7a7a7a;
+    opacity: .5;
+    cursor: not-allowed;
+}
+
+li a{
+    
+    color: rgba(240, 255, 255, 0.493);
+    
+}
+
+
+

@@ -1,0 +1,106 @@
+
+/*Intentar */
+
+.video_info{
+    display: grid;
+    margin: 35px 30px 50px 30px;
+    z-index: 2;
+    row-gap: 2.5rem;
+    column-gap: 2.5rem;
+
+}
+
+.frontpage{
+    border-radius: 5rem;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    height: 300px;
+}
+
+.posters-img2{
+    height: 100%;
+    max-width: 100%;
+    border-radius: 5px;
+
+}
+
+.about_movie{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    
+}
+
+.movie_description {
+    background-color: var(--black2);
+    padding: 5px;
+    border-radius: 10px;  
+}
+
+.movie_description p, .movie_info li{
+    line-height: 2;
+}
+.about_movie h1, .movie_description{
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+.movie_info{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+.movie_info li a{
+    color: #04a1f4;
+    cursor: pointer;
+    
+}
+
+
+.video_container{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    height: 700px;   
+}
+
+.video_border{
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+}
+
+.video{
+   height: 100%;
+   width: 100%; 
+   border-radius: 5px;
+}
+
+/*Diseño para dispositivos moviles*/
+
+@media(max-width: 750px){
+
+    .about_movie, .video_container, .frontpage{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        
+    }
+    .frontpage, .about_movie h1{     
+        text-align: center;
+    }
+    .about_movie{
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .video_container{
+        grid-row-start: 3;
+        grid-row-end: 4;
+        height: 400px;
+    }
+    .movie_description{
+        overflow-x: hidden;
+        max-height: 10rem;
+    }
+
+}
+
+

@@ -1,0 +1,99 @@
+
+/*Adaptar el tamaño de las letras para que se vean un poco mas grandes en los dispositivos como tablets*/
+.navbar {
+  /*width: 250px;*/
+  background-color: var(--black2);
+  
+
+  /*flex-direction: column;*/
+  /*height: 100%;*/
+  border-radius: 0.5rem;
+  padding: 10px 0 0 0;
+  margin: 0;
+  
+}
+
+
+.navbar li{
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+
+.navbar li:hover{
+  background-color: var(--dark-red);
+  transition: color .2s ease, background-color .2s ease;
+}
+
+
+
+/*Darle un margin mayor a cada link para que esten un poco separados, pero si haras esto tiens que ajustar el position absolute del background para dispositivos mas pequeños*/
+.navbar li a {
+  
+  text-decoration: none;
+  font-size:xx-large;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  cursor: pointer;
+  color: var(--white);
+}
+
+.navbar li a img{
+  padding-left: 10px;
+
+}
+
+
+
+/*Adaptar el nav hover a los diferentes dispositivos*/
+
+
+
+
+/*Diseño para dispositivos moviles y tablets*/
+
+@media (max-width: 900px){
+  
+  ul.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0;
+  }
+  ul.navbar li{
+    margin: 0;
+    
+  }
+  .navbar li a{
+    font-size: large;
+    height: 60px;
+    padding-right: 5px;
+  }
+  .navbar li a img{
+    height: 25px;
+    padding: 0;
+  }
+}
+
+@media (max-width:425px){ 
+  ul.navbar{
+    display: block;
+  }
+  .navbar li a{
+    height: 40px;
+    padding-left: 40%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

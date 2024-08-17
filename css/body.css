@@ -1,0 +1,39 @@
+body{
+    background-color: var(--dark-blue);
+}
+.body-fixed{
+    position: relative;
+}
+
+body, nav a, div a{
+    color: var(--white);
+}
+
+header, .navbar{
+    font-family: 'Mifuente';
+}
+
+main{
+    font-family: 'Avara';
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
