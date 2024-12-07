@@ -100,6 +100,7 @@ header{
 .ListResult li{
     padding: 20px 10px 20px 70px;
     position: relative;
+    cursor: pointer;
 }
 .ListResult li figure{
 
@@ -115,9 +116,6 @@ header{
     height: 100%;
     width: 100%;
     border-radius: .5rem;
-}
-.ListResult li a{
-    cursor: pointer;
 }
 
 
